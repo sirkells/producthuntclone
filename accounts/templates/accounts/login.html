@@ -5,9 +5,10 @@
     <br />
     <br /> {% endif %}
 
-    <h1>Sign Up!</h1>
-    <form method="POST" action="{% url 'signup' %}">
-        {% csrf_token %} Username:
+    <h1>Login</h1>
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %} 
+        Username:
         <br />
         <input type="text" name="username" />
         <br /> Password:
@@ -15,7 +16,7 @@
         <input type="password" name="password" />
         <br />
         <br />
-        <input class="btn btn-primary" type="submit" value="Sign Up!" />
+        <input class="btn btn-primary" type="submit" value="Login!" />
     </form>
 </div>
 {% endblock %}
